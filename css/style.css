@@ -4,6 +4,7 @@
   --additional-text-color: #757575;
   --title-text-color: #ffffff;
   --bgc-color: #2f303a;
+  --bgc-svg: #f5f4fa;
   --third-bg-color: #f5f4fa;
   --secondary-bg-color: #e5e5e5;
   --adress-text: rgb(255, 255, 255, 60%);
@@ -14,8 +15,8 @@
 
   --margin: 50px;
   --card-set-gap: 30px;
-  --card-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
-    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  --card-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 body {
   font-size: 14px;
@@ -137,11 +138,27 @@ img {
   color: var(--accent-text-color);
 }
 /* hero */
+
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
-  width: 1800px;
+  width: 1600px;
+  height: 600px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: auto;
+  margin-right: auto;
   background-color: var(--bgc-color);
+
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../img/hero.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .hero-title {
   display: block;
@@ -246,6 +263,7 @@ section.team {
   box-shadow: var(--card-shadow);
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
+  background-color: white;
 }
 .name-position {
   padding-top: var(--card-set-gap);
