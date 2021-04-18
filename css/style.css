@@ -313,12 +313,19 @@ section.team {
 .name-position .title-name {
   margin-bottom: 10px;
 }
-
-.network {
+.network-link {
   width: 44px;
   height: 44px;
   border: 1px solid red;
 }
+.network {
+  fill: var(--icon-color);
+}
+.network:hover {
+  fill: var(--title-text-color);
+  background-color: var(--accent-text-color);
+}
+
 /* footer */
 .footer {
   background-color: #2f303a;
