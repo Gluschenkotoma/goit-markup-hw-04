@@ -286,6 +286,7 @@ img {
   font-weight: 500;
 }
 .text-name {
+  margin-bottom: 16px;
   color: var(--additional-text-color);
 }
 /* -- Чем мы занимаемся */
@@ -306,26 +307,47 @@ section.team {
   background-color: white;
 }
 .name-position {
+  margin-left: 32px;
+  margin-right: 32px;
   padding-top: var(--card-set-gap);
   padding-bottom: var(--card-set-gap);
   text-align: center;
 }
+
 .name-position .title-name {
   margin-bottom: 10px;
 }
-.network-link {
-  width: 44px;
-  height: 44px;
-  border: 1px solid red;
+.network-list {
+  margin: 32px 30px;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  outline: 1px solid;
+}
+.network-list-item {
+  align-items: center;
+}
+.network-list > .network-list-item + .network-list-item {
+  margin-left: 10px;
 }
 .network {
-  fill: var(--icon-color);
+  display: block;
+  padding: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--title-text-color);
+  border: 1px solid green;
+  color: var(--icon-color);
 }
 .network:hover {
-  fill: var(--title-text-color);
+  color: var(--title-text-color);
   background-color: var(--accent-text-color);
 }
-
+.network-icon {
+  fill: currentColor;
+}
 /* footer */
 .footer {
   background-color: #2f303a;
