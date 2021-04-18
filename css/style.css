@@ -9,6 +9,7 @@
   --secondary-bg-color: #e5e5e5;
   --adress-text: rgb(255, 255, 255, 60%);
   --button-color: #f5f4fa;
+  --icon-color: #afb1b8;
 
   --main-fonts: "Roboto", sans-serif;
   --second-font: "Raleway", sans-serif;
@@ -59,6 +60,11 @@ img {
   height: 1px !important;
   width: 1px !important;
   overflow: hidden;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  outline: 1px solid rgb(71, 255, 132);
 }
 /* Conteiner header */
 .conteiner {
@@ -121,7 +127,9 @@ img {
 .contact-header {
   display: flex;
   margin-left: auto;
+  align-items: center;
 }
+
 /* Если есть сосед сверху,дать ему левый внешний отступ */
 .contact-header .item + .item {
   margin-left: var(--margin);
@@ -137,6 +145,23 @@ img {
 .contact:focus {
   color: var(--accent-text-color);
 }
+.contact-icon-mail {
+  width: 16px;
+  height: 12px;
+  fill: #757575;
+}
+.contact-icon-mail:hover {
+  fill: var(--accent-text-color);
+}
+.contact-icon-tel {
+  width: 10px;
+  height: 16px;
+  fill: #757575;
+}
+.contact-icon-tel:hover {
+  fill: var(--accent-text-color);
+}
+
 /* hero */
 
 .hero {
@@ -177,6 +202,7 @@ img {
 /* button */
 .button {
   display: block;
+
   margin-top: 30px;
   margin-bottom: 0;
   margin-right: auto;
@@ -192,12 +218,9 @@ img {
   border-radius: 4px;
   cursor: pointer;
 }
+
 /* sections */
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-  outline: 1px solid rgb(71, 255, 132);
-}
+
 .section.about {
   padding-bottom: 0;
 }
@@ -205,7 +228,7 @@ img {
   text-align: center;
   font-size: 36px;
   line-height: 1.17;
-  margin-bottom: var(--mardgin);
+  margin-bottom: var(--margin);
 }
 .title {
   font-size: 14px;
@@ -222,8 +245,27 @@ img {
 
 .list-item {
   width: 270px;
-  outline: 1px solid rgb(71, 255, 102);
 }
+
+.icons-features {
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  margin-bottom: var(--card-set-gap);
+}
+
+/* .list-item::before {
+  display: block;
+  content: "";
+  height: 270px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-flex-group: #ccc;
+}
+.list-item:nth-child(3):before {
+  background-image: url(../img/svg/envelope.svg);
+} */
 .list-item .text {
   margin-bottom: 0;
 }
@@ -272,6 +314,11 @@ section.team {
   margin-bottom: 10px;
 }
 
+.network {
+  width: 44px;
+  height: 44px;
+  border: 1px solid red;
+}
 /* footer */
 .footer {
   background-color: #2f303a;
