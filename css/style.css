@@ -330,6 +330,37 @@ section.team {
 .network-icon {
   fill: currentColor;
 }
+/* regular-customers */
+.regular-customers {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--card-set-gap));
+  margin-left: calc(-1 * var(--card-set-gap));
+}
+.regular-customers .item-icon {
+  flex-basis: calc(100% / 6 - var(--card-set-gap));
+  width: calc(100% / 6 - var(--card-set-gap));
+  margin-top: var(--card-set-gap);
+  margin-left: var(--card-set-gap);
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+}
+
+.regular-customers .item-icon:hover {
+  border-color: var(--accent-text-color);
+}
+.regular-customers .item-icon:hover .link {
+  color: var(--accent-text-color);
+}
+.regular-customers .link {
+  display: block;
+  padding: 16px 32px;
+  color: var(--icon-color);
+}
+.customer-icon {
+  fill: currentColor;
+}
+
 /* footer */
 .footer {
   width: 1600px;
