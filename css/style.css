@@ -299,37 +299,83 @@ section.team {
   margin-bottom: 10px;
 }
 /* соцсети */
+/* список соцсетей */
 .network-list {
   display: flex;
-  text-align: center;
-
+  color: var(--icon-color);
+  background-color: var(--title-text-color);
   outline: 1px solid tomato;
 }
+
 .network-list > .network-list-item + .network-list-item {
   margin-left: 10px;
 }
-.network {
-  display: block;
+
+/* ссылка на соцсеть */
+.network-list .network {
+  display: flex;
   align-items: center;
-  padding: 0;
+  justify-content: center;
+
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background-color: var(--title-text-color);
-  border: 1px solid green;
-  color: var(--icon-color);
 }
-.network:hover {
+.network-list .network:hover {
   color: var(--title-text-color);
   background-color: var(--accent-text-color);
 }
+
+/* картинка свг */
 .network-icon {
   fill: currentColor;
 }
 /* footer */
 .footer {
+  width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+
   background-color: #2f303a;
 }
+.footer > .conteiner {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.parts {
+  display: flex;
+  flex-wrap: wrap;
+}
+.part {
+  flex-basis: calc(100% / 4 - var(--card-set-gap));
+}
+.parts > .part + .part {
+  margin-left: var(--card-set-gap);
+}
+.network-list-footer {
+  display: flex;
+  background-color: inherit;
+  color: var(--title-text-color);
+  outline: 1px solid red;
+}
+.network-list-footer > .network-list-item + .network-list-item {
+  margin-left: 10px;
+}
+.network-footer {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 44px;
+  height: 44px;
+
+  border-radius: 50%;
+}
+.network-footer:hover {
+  background-color: var(--accent-text-color);
+}
+
 .address {
   margin-top: 20px;
   color: var(--title-text-color);
@@ -350,9 +396,9 @@ section.team {
 .logo-studio {
   color: var(--title-text-color);
 }
-.footer > .conteiner {
-  padding-top: 60px;
-  padding-bottom: 60px;
+.part .title {
+  color: var(--title-text-color);
+  margin-bottom: 20px;
 }
 
 /* portfolio */
