@@ -123,21 +123,16 @@ img {
 .site-nav .link.current {
   color: var(--accent-text-color);
 }
+
 /* contacts */
 .contact-header {
   display: flex;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  margin-left: auto;
   align-items: center;
+  margin-left: auto;
 }
-
-/* Если есть сосед сверху,дать ему левый внешний отступ */
 .contact-header .item + .item {
   margin-left: var(--margin);
 }
-
 .contact {
   padding: 0;
   color: var(--icon-color);
@@ -148,15 +143,15 @@ img {
   color: var(--additional-text-color);
 }
 .contact:hover,
-.contact:focus {
+.contact:focus .contact-icon {
   color: var(--accent-text-color);
 }
+
 .contact-icon {
   fill: currentColor;
 }
 
 /* hero */
-
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
@@ -330,7 +325,7 @@ section.team {
 .network-icon {
   fill: currentColor;
 }
-/* regular-customers */
+/* regular-customers------------------------------------- */
 .regular-customers {
   display: flex;
   flex-wrap: wrap;
@@ -338,8 +333,10 @@ section.team {
   margin-left: calc(-1 * var(--card-set-gap));
 }
 .regular-customers .item-icon {
-  flex-basis: calc(100% / 6 - var(--card-set-gap));
-  width: calc(100% / 6 - var(--card-set-gap));
+  flex-basis: calc((100% - 6 * var(--card-set-gap)) / 6);
+  width: calc((100% - 6 * var(--card-set-gap)) / 6);
+  /* flex-basis: calc(100% / 6 - var(--card-set-gap));
+  width: calc(100% / 6 - var(--card-set-gap)); */
   margin-top: var(--card-set-gap);
   margin-left: var(--card-set-gap);
   border: 1px solid var(--icon-color);
