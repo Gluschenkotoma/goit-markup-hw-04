@@ -234,10 +234,13 @@ img {
 .list-item {
   width: 270px;
 }
-
-.icons-features {
-  border-radius: 4px;
+.features {
+  background-color: var(--third-bg-color);
   margin-bottom: var(--card-set-gap);
+  border-radius: 4px;
+}
+.icons-features {
+  margin: 20px 100px;
 }
 
 .list-item .text {
