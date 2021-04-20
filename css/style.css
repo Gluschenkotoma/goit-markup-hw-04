@@ -119,9 +119,11 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-
-.current:hover,
-.current:focus {
+.current {
+  color: var(--accent-text-color);
+}
+.current-link:hover,
+.current-link:focus {
   color: var(--accent-text-color);
 }
 
